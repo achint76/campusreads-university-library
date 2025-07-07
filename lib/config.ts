@@ -14,7 +14,14 @@ const config = {
         qstashUrl: process.env.QSTASH_URL!,
         qstashToken: process.env.QSTASH_TOKEN!,
       },
-      resendToken: process.env.RESEND_TOKEN!
+      // Commented out Resend configuration
+      // resendToken: process.env.RESEND_TOKEN!,
+      
+      // Gmail SMTP configuration
+      gmail: {
+        user: process.env.GMAIL_USER!,
+        appPassword: process.env.GMAIL_APP_PASSWORD!,
+      }
     },
   };
   
